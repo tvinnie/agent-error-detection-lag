@@ -18,8 +18,9 @@ failure become detectable.
 
 ## Repository Structure
 
-Dataset: https://huggingface.co/datasets/Kevin355/Who_and_When
-Paper: Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems (https://arxiv.org/abs/2505.00212)
+**Dataset**: https://huggingface.co/datasets/Kevin355/Who_and_When
+
+**Paper** : Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems (https://arxiv.org/abs/2505.00212)
 
 - `data/` - raw and processed data (not committed to Git)
 - `src/` - reusable Python scripts
