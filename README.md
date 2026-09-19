@@ -16,11 +16,13 @@ The goal is to measure detection lag: the number of steps between an
 annotated decisive error and the earliest point where signals of that
 failure become detectable.
 
-## Repository Structure
+## Sources
 
 **Dataset**: https://huggingface.co/datasets/Kevin355/Who_and_When
 
 **Paper** : Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems (https://arxiv.org/abs/2505.00212)
+
+## Repository Structure
 
 - `data/` - raw and processed data (not committed to Git)
 - `src/` - reusable Python scripts
