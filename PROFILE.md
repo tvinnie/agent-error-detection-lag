@@ -63,3 +63,21 @@ The dataset inventory script recursively examines these files and records:
 ---
 
 ## 5. Important Fields
+
+Initial inspection shows fields related to the task, conversation trace, and annotated failure.
+
+Fields of particular interest include:
+
+| Field            | Purpose                                     |
+| ---------------- | ------------------------------------------- |
+| `question`       | Original task or problem                    |
+| `question_ID`    | Identifier for the task                     |
+| `history`        | Sequence of agent interactions/actions      |
+| `ground_truth`   | Expected correct outcome                    |
+| `mistake_agent`  | Agent responsible for the annotated mistake |
+| `mistake_step`   | Step where the mistake occurred             |
+| `mistake_reason` | Explanation of the mistake                  |
+
+These fields may vary slightly between records and should be verified during exploratory analysis.
+
+---
