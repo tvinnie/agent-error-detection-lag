@@ -1,5 +1,3 @@
-# Dataset Profile — Who & When
-
 ## 1. Dataset Overview
 
 **Dataset:** Who & When  
