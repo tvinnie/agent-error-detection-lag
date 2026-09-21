@@ -115,3 +115,14 @@ Additional features may later be extracted from the trace, such as:
 - LLM-based suspicion scores
 
 ---
+
+## 8. Exploratory Questions
+
+Before building a detection method, the exploratory analysis should answer:
+
+1. How many traces are available?
+2. How many traces are Algorithm-Generated versus Hand-Crafted?
+3. How long are the traces?
+4. At what step do annotated mistakes usually occur?
+5. Which agents are most frequently associated with mistakes?
+6. What types of mistakes occur?
