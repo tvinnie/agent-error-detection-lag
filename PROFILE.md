@@ -79,3 +79,39 @@ Fields of particular interest include:
 These fields may vary slightly between records and should be verified during exploratory analysis.
 
 ---
+
+## 6. Unit of Analysis
+
+The primary unit of analysis will be a **trace**.
+
+A trace consists of an ordered sequence of interactions stored in the `history` field.
+
+Each history entry can potentially provide signals indicating whether an earlier error has become visible.
+
+---
+
+## 7. Initial Variables
+
+Variables expected to be useful include:
+
+```text
+trace_id
+dataset_type
+trace_length
+mistake_agent
+mistake_step
+mistake_reason
+first_detectable_step
+detection_lag
+```
+
+Additional features may later be extracted from the trace, such as:
+
+- message length
+- contradictions
+- failed actions
+- anomaly indicators
+- explicit correction attempts
+- LLM-based suspicion scores
+
+---
