@@ -53,3 +53,13 @@ As per the project brief:
 - Number of failed multi-agent runs: 184
 - Agent attribution baseline: approximately 50%
 - Decisive-step attribution baseline: under 15%
+
+## 4. Dataset Verification
+
+| Metric           | Claimed | Actual | Match? |
+| ---------------- | ------: | -----: | ------ |
+| Number of traces |     184 |    TBD | TBD    |
+| Number of files  |     TBD |    TBD | TBD    |
+| Missing values   |     TBD |    TBD | TBD    |
+
+### Mismatches
