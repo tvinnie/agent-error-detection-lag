@@ -126,3 +126,9 @@ Before building a detection method, the exploratory analysis should answer:
 4. At what step do annotated mistakes usually occur?
 5. Which agents are most frequently associated with mistakes?
 6. What types of mistakes occur?
+7. Do errors usually become obvious immediately or several steps later?
+8. Are some error types associated with longer detection lags?
+9. Are there traces where the failure never becomes clearly detectable?
+10. What observable signals tend to appear after the decisive error?
+
+## 9. Manual Trace Inspection
