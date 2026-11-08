@@ -6,7 +6,7 @@
 **Reporting Period:** August 20 – October 14, 2026  
 **Status:** In Progress
 
-## Week 1: August 20–26, 2026
+## Week 1
 
 **Focus: Project Orientation and Research Planning**
 
@@ -17,7 +17,7 @@
 
 **Next Steps:** Narrow down the research scope and identify a suitable dataset.
 
-## Week 2: August 27 – September 2, 2026
+## Week 2
 
 **Focus: Research Question and Dataset Selection**
 
@@ -29,7 +29,7 @@
 
 **Next Steps:** Review the dataset documentation and understand the available annotations.
 
-## Week 3: September 3–9, 2026
+## Week 3
 
 **Focus: Understanding the Dataset and Research Methodology**
 
@@ -41,7 +41,7 @@
 
 **Next Steps:** Develop a dataset inventory and identify the fields relevant to detection lag.
 
-## Week 4: September 10–16, 2026
+## Week 4
 
 **Focus: Dataset Exploration and Profiling**
 
@@ -57,7 +57,7 @@
 
 **Next Steps:** Inspect individual traces and study the existing baseline implementation.
 
-## Week 5: September 17–23, 2026
+## Week 5
 
 **Focus: Baseline Reproduction and Evaluation Setup**
 
@@ -74,7 +74,7 @@
 
 **Next Steps:** Resolve the API limitation, complete the baseline evaluation, and compare the reproduced metric with the reference results.
 
-## Week 6: September 24–30, 2026
+## Week 6
 
 **Focus: Baseline Evaluation and Reproducibility**
 
@@ -87,6 +87,31 @@
 **Challenges:** A successfully reproduced numerical baseline result had not yet been verified.
 
 **Next Steps:** Complete the baseline sanity check and document the observed results.
+
+## Week 7
+
+**Focus: Detection-Lag Methodology Development**
+
+- Refined the distinction between the decisive error step and the earliest detectable failure signal.
+- Identified potential detection signals, including tool failures, contradictory responses, repeated unsuccessful actions, and explicit corrections.
+- Outlined a manual trace-inspection process to establish initial detection-step labels.
+- Considered how detection lag could be compared across error types, agents, and trace lengths.
+- Planned the variables needed for subsequent analysis.
+
+**Challenges:** Establishing a consistent definition of detectability across different multi-agent traces.
+
+**Next Steps:** Manually inspect selected traces and develop preliminary detection criteria.
+
+## Week 8
+
+**Focus: Research Documentation and Progress Review**
+
+- Reviewed the dataset exploration, baseline reproduction setup, and technical challenges encountered.
+- Organized the project documentation to support reproducibility and future analysis.
+- Identified the remaining steps required to calculate and evaluate detection lag.
+- Prepared a consistent reporting format for recording experiments, findings, and challenges throughout the project.
+
+**Current Status:** The dataset exploration and baseline reproduction workflow have been prepared. A verified baseline score and detection-lag results are still pending.
 
 ---
 

@@ -36,30 +36,53 @@ hand-built Magentic-One system.
 
 ### Unit of observation
 
-The dataset contains failure trajectories/traces from multi-agent runs.
+The primary unit of observation is a failed multi-agent execution trajectory (trace).
 
-### Labels
+Each trajectory represents a sequence of interactions or execution steps performed by agents while attempting to complete a task.
 
-Human annotators:
+These trajectories provide the information needed to investigate:
 
-1. The failure-responsible agent
-2. The decisive error step
-3. A natural-language explanation of the mistake
+- Which agent was responsible for a failure.
 
-### Verification Targets
+- At which step the decisive error occurred.
 
-As per the project brief:
+- How errors propagate through subsequent agent interactions.
 
-- Number of failed multi-agent runs: 184
-- Agent attribution baseline: approximately 50%
-- Decisive-step attribution baseline: under 15%
+- When evidence of an error first becomes observable.
+
+### Ground-Truth Annotations
+
+The dataset provides human-annotated failure information, including:
+
+1. **`mistake_agent`:** The agent identified as responsible for the decisive mistake.
+2. **`mistake_step`:** The annotated execution step at which the decisive mistake occurred.
+3. **Mistake explanation:** A natural-language description explaining the error and its contribution to task failure.
+
+### Verified Targets
+
+As per the project brief, the expected dataset and baseline characteristics are:
+
+| Metric                             |          Expected |
+| ---------------------------------- | ----------------: |
+| Failed multi-agent runs            |               184 |
+| Agent attribution baseline         | Approximately 50% |
+| Decisive-step attribution baseline |         Below 15% |
 
 ## 4. Dataset Verification
 
-| Metric           | Claimed | Actual | Match? |
-| ---------------- | ------: | -----: | ------ |
-| Number of traces |     184 |    TBD | TBD    |
-| Number of files  |     TBD |    TBD | TBD    |
-| Missing values   |     TBD |    TBD | TBD    |
+### Objective
 
-### Mismatches
+The objective of this is to validate the dataset structure, inspect the available ground-truth annotations, and identify inconsistencies that could affect automated failure-attribution evaluation.
+
+### Verification of Results
+
+| Metric                             | Expected            | Phase 1 Finding                               | Status                |
+| ---------------------------------- | ------------------- | --------------------------------------------- | --------------------- |
+| Number of failed traces            | 184                 | Final count to insert from inventory output   | Pending confirmation  |
+| Dataset categories                 | 2                   | Algorithm-Generated and Hand-Crafted          | Verified              |
+| Failure-responsible agent label    | Present             | `mistake_agent` identified                    | Verified              |
+| Decisive error step label          | Present             | `mistake_step` identified                     | Verified              |
+| Natural-language error explanation | Present             | Annotation field identified                   | Verified              |
+| Step annotation alignment          | Consistent          | 9 records flagged for further investigation   | Exceptions identified |
+| Missing values                     | No target specified | Exact counts to insert from validation output | Pending documentation |
+| Number of local files              | No target specified | Exact count to insert from inventory output   | Pending documentation |
